@@ -1,25 +1,24 @@
 // JavaScript is a dynamically typed language, which means that data types of variables are determined by the value they hold at runtime and can change throughout the program as we assign different values to them.
 
-
 //Primitive
 // 7 types : String, Number, Boolearn, null, undefined, Symbol,BigInt
 
-const score = 100
-const scoreValue = 100.3
-const isLoggedIn = false
-const outsideTemp = null
+const score = 100;
+const scoreValue = 100.3;
+const isLoggedIn = false;
+const outsideTemp = null;
 let userEmail;
 
-const id = Symbol ('123')
-const anotherld = Symbol ('123')
-console.log(id)
+const id = Symbol("123");
+const anotherld = Symbol("123");
+console.log(id);
 // console. log (id === anotherId);
-const bigNumber = 3456543576654356754n
- 
- // Reference (Non primitive)
- // Array, Objects, Functions
+const bigNumber = 3456543576654356754n;
 
- //CHECK YOUR TYPES  - https://262.ecma-international.org/5.1/#sec-11.4.3
+// Reference (Non primitive)
+// Array, Objects, Functions
+
+//CHECK YOUR TYPES  - https://262.ecma-international.org/5.1/#sec-11.4.3
 
 //  Return type of variables in JavaScript
 //  1) Primitive Datatypes
@@ -36,6 +35,20 @@ const bigNumber = 3456543576654356754n
 //        Function  =>  function
 //        Object  =>  object
 
+//=++++++++++++++++++++++++++++++++++++++++++++++++
+//Stack (Primitive), #Heap (Non-Primitive)
 
- 
-  
+//STACK EXAMPLE - COPY OF ORIGINAL VAIRABLE
+let myYoutubename = "hiteshchoudharydotcom";
+let anothername = myYoutubename;
+anothername = "chaiaurcode";
+
+// HEAP EXAMPLE - REFERANCE OF VARIABLE
+let userOne = {
+  email: "user@google.com",
+  upi: "user@ybl",
+};
+let userTwo = userOne;
+userTwo.email = "hitesh@google. com";
+console.log(userOne.email);
+console.log(userTwo.email);
