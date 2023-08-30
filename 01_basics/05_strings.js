@@ -1,29 +1,38 @@
-let str = new String("vipin");
-console.log(str)
+const name = "hitesh"
+const repoCount = 50
 
-let trimString = " vipin    gusain "
-// console.log(trimString)
-console.log(trimString.trim(0,8))
-// console.log(str[3])
-// console.log(str.charAt(4))
-// console.log(str.slice(3,4))
-// console.log(str.substring(0,2))
+// console.log(name + repoCount + " Value");
+
+console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
+
+const gameName = new String('hitesh-hc-com')
+
+// console.log(gameName[0]);
+// console.log(gameName.__proto__);
 
 
-let url = "https://www.google%20.com"
-// console.log(url.replace('%20',""))
+// console.log(gameName.length);
+// console.log(gameName.toUpperCase());
+console.log(gameName.charAt(2));
+console.log(gameName.indexOf('t'));
 
-let splitString = "Vipin-kumar-gusain"
-// console.log(splitString.split(' - '))
+const newString = gameName.substring(0, 4)
+console.log(newString);
 
-const myString = "Every green bus drives fast"
-const atWay = myString.at(-2);
-// console.log(atWay);
+const anotherString = gameName.slice(-8, 4)
+console.log(anotherString);
 
-let str1 = "Vipin";
-let str2 = "gusain"
+const newStringOne = "   hitesh    "
+console.log(newStringOne);
+console.log(newStringOne.trim());
 
-console.log(str1.concat(" ", str2))
+const url = "https://hitesh.com/hitesh%20choudhary"
+
+console.log(url.replace('%20', '-'))
+
+console.log(url.includes('sundar'))
+
+console.log(gameName.split('-'));
 
 
 const strSplit = 'The quick brown fox jumps over the lazy dog.';
